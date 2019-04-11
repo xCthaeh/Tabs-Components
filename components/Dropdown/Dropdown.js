@@ -3,7 +3,7 @@ class Dropdown {
     
     // Assign this.element to the dropdown element
     
-    this.element = element;
+    this.element = this.element = document.querySelector(".dropdown");
     
     // Get the element with the ".dropdown-button" class found in the dropdown element (look at the HTML for context)
     
@@ -15,12 +15,12 @@ class Dropdown {
     
     // Add a click handler to the button reference and call the toggleContent method.
     
-    this.button.addEventListener('click', () => {
+    this.button.addEventListener('click', (e) => {
       this.toggleContent();
     })
   }
 
-  toggleContent() {
+  toggleContent(e) {
     
     // Toggle the ".dropdown-hidden" class off and on
     if (this.content.classList.contains('dropdown-hidden')) {
