@@ -59,9 +59,10 @@
   width: 75%;
 }
 .tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   padding-bottom: 10px;
+  font-family: 'Lobster', cursive;
 }
 .tabs .tabs-item-selected {
   display: block;
@@ -89,6 +90,10 @@
 }
 .tabs .tabs-link-selected:hover {
   background-color: #ffffff;
+}
+.tabs .tabs-item-description {
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
 }
 #myCarousel {
   width: 90%;
